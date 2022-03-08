@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF3C3D7C-C67A-4923-8D54-358C04297473}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ManavOtomasyon</RootNamespace>
+    <AssemblyName>ManavOtomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CalisanListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CalisanListe.Designer.cs">
+      <DependentUpon>CalisanListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KargoListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KargoListe.Designer.cs">
+      <DependentUpon>KargoListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KategoriListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KategoriListe.Designer.cs">
+      <DependentUpon>KategoriListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MusteriListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MusteriListe.Designer.cs">
+      <DependentUpon>MusteriListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OdemeListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OdemeListe.Designer.cs">
+      <DependentUpon>OdemeListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RutbeListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RutbeListe.Designer.cs">
+      <DependentUpon>RutbeListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SiparisBilgiListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SiparisBilgiListe.Designer.cs">
+      <DependentUpon>SiparisBilgiListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SiparisDetayListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SiparisDetayListe.Designer.cs">
+      <DependentUpon>SiparisDetayListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TedarikciListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TedarikciListe.Designer.cs">
+      <DependentUpon>TedarikciListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UrunListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UrunListe.Designer.cs">
+      <DependentUpon>UrunListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CalisanListe.resx">
+      <DependentUpon>CalisanListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KargoListe.resx">
+      <DependentUpon>KargoListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KategoriListe.resx">
+      <DependentUpon>KategoriListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MusteriListe.resx">
+      <DependentUpon>MusteriListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OdemeListe.resx">
+      <DependentUpon>OdemeListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RutbeListe.resx">
+      <DependentUpon>RutbeListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SiparisBilgiListe.resx">
+      <DependentUpon>SiparisBilgiListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SiparisDetayListe.resx">
+      <DependentUpon>SiparisDetayListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TedarikciListe.resx">
+      <DependentUpon>TedarikciListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UrunListe.resx">
+      <DependentUpon>UrunListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IsKatmani\IsKatmani.csproj">
+      <Project>{c2a2f70a-10e6-4fcb-a22c-472467ce12ae}</Project>
+      <Name>IsKatmani</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VarlikKatmani\VarlikKatmani.csproj">
+      <Project>{3356abe0-146a-444a-8e5a-d03dd9fb4ff9}</Project>
+      <Name>VarlikKatmani</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VeriErisimKatmani\VeriErisimKatmani.csproj">
+      <Project>{5a4d0b6e-3c7e-4b92-abb8-f2b8169c3c96}</Project>
+      <Name>VeriErisimKatmani</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
